@@ -1,0 +1,27 @@
+[
+  {
+    "id": "python-import-error",
+    "tags": ["python"],
+    "issue": "ModuleNotFoundError: No module named 'requests' after installing the package",
+    "answer": "Ensure you are using the same interpreter as pip. Run `python -m pip install requests` and verify `python -c \"import requests; print(requests.__version__)\"` succeeds. In virtualenvs, activate the env before installing."
+  },
+  {
+    "id": "npm-not-found",
+    "tags": ["npm"],
+    "issue": "npm command not found after installing Node.js",
+    "answer": "Install Node.js from nodejs.org and restart your terminal so PATH updates. On Windows, ensure the installer added Node and npm to PATH; otherwise add the Node install directory (e.g., `C:\\Program Files\\nodejs`) manually."
+  },
+  {
+    "id": "npm-install-fail-proxy",
+    "tags": ["npm"],
+    "issue": "npm install fails with ECONNREFUSED behind a corporate proxy",
+    "answer": "Configure proxy: `npm config set proxy http://user:pass@proxy:port` and `npm config set https-proxy http://user:pass@proxy:port`. If SSL inspection causes issues, try `npm config set strict-ssl false` (temporary) and prefer adding the proxy's root certificate instead."
+  },
+  {
+    "id": "python-venv-mismatch",
+    "tags": ["python"],
+    "issue": "Package installed but script still cannot import inside VS Code",
+    "answer": "In VS Code select the correct interpreter (Command Palette → Python: Select Interpreter). If using a venv, activate it (`source venv/bin/activate` or `venv\\Scripts\\activate`) before running. Reinstall dependencies inside that env."
+  }
+]
+

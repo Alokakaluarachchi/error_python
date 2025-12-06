@@ -1,0 +1,18 @@
+[
+  {
+    "query": "logs log test involves checking system/application",
+    "highlights": [
+      "error log test\" involves checking system/application logs (like Windows Event Viewer or server logs) for recorded issues or intentionally triggering errors (using error_log() in PHP, console.log in JS tests with Jest) to verify that error handling works correctly, ensuring"
+    ],
+    "results": 6,
+    "local_matches": 3
+  },
+  {
+    "query": "logs log test involves checking system/application",
+    "highlights": [
+      "error log test\" involves checking system/application logs (like Windows Event Viewer or server logs) for recorded issues or intentionally triggering errors (using error_log() in PHP, console.log in JS tests with Jest) to verify that error handling works correctly, ensuring"
+    ],
+    "results": 6,
+    "local_matches": 3
+  }
+]
